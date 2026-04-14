@@ -5,8 +5,7 @@
 // Duration: 40 minutes
 // ============================================================
 // SINGLE FILE IMPLEMENTATION - No header files allowed
-// ================================
-============================
+// ============================================================
 
 #include <iostream>
 #include <string>
@@ -142,7 +141,7 @@ public:
 // TODO 6: Function Overloading - findBestStudent
 // Version 1: Takes two Student references, returns the one with higher GPA
 Student findBestStudent(const Student& a, const Student& b) {
-    if (b<a){
+    if (a.getGpa() >= b.getGpa()){
         return a;
     }
     return b;
